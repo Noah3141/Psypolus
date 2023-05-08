@@ -1,6 +1,29 @@
-use app_shared::{*};
+use app_shared::*;
+pub mod routes;
+pub mod utils;
 
-fn main() {
-    println!("Hello, world!");
-    let user = User {name: "Phil".to_string()};
+use routes::{
+    get_user::*,
+    // list files
+};
+
+use utils::{
+    file::*,
+};
+
+
+
+#[macro_use] extern crate rocket;
+
+
+#[rocket::main]
+async fn main() -> Result<(), rocket::Error> {
+
+    let _rocket = rocket::build()
+        .mount("/", routes![get_user])
+        .launch()
+        .await?;
+
+    Ok(())
+    
 }

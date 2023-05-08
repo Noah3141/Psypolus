@@ -10,6 +10,6 @@ path = '../app_shared'
 
 [dependencies]
 rocket = { version = "0.5.0-rc.2", features = ["json"] }
-tokio = { version = "1.18.0", features = ["full"] }
-chrono = { version = "0.4", features = ["serde"] }
-serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.28.0", features = ["full"] }
+chrono = { version = "0.4.24", features = ["serde"] }
+serde = { version = "1.0.162", features = ["derive"] }

@@ -5,14 +5,14 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies.app-shared]
+[dependencies.app_shared]
 path = '../app_shared'
 
 [dependencies]
-wasm-bindgen-futures = "0.4"
-web-sys = "0.3"
+wasm-bindgen-futures = "0.4.34"
+web-sys = "0.3.61"
 yew = { version = "0.20.0", features = ["csr"] }
 yew-router = "0.17"
 reqwasm = "0.5.0"
-serde = { version = "1.0", features = ["derive"] }
-chrono = { version = "0.4", features = ["serde", "wasmbind"] }
+serde = { version = "1.0.162", features = ["derive"] }
+chrono = { version = "0.4.24", features = ["serde", "wasmbind"] }
