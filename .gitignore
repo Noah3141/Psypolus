@@ -1,0 +1,8 @@
+app-shared/cargo.lock
+app-backend/cargo.lock
+app-frontend/cargo.lock
+app-shared/target
+app-backend/target
+app-frontend/target
+
+app-frontend/node_modules
