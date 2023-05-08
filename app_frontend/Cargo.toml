@@ -1,9 +1,12 @@
 [package]
-name = "app-frontend"
+name = "app_frontend"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.app-shared]
+path = '../app_shared'
 
 [dependencies]
 wasm-bindgen-futures = "0.4"
