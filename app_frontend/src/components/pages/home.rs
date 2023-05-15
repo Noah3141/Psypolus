@@ -24,7 +24,7 @@ pub fn home() -> Html {
                 <li>
                     <Link<Route>
                         to={ Route::AboutBigFive } 
-                        classes="text-md font-semibold leading-6
+                        classes="text-md link font-semibold leading-6
                         ">{"Big Five Personality Test"}
                     </Link<Route>>
                 </li>

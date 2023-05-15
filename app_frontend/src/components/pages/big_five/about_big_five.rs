@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 use crate::components::inc::survey_section_bar::SurveyNav;
+use super::big_five_sections::BigFiveSections;
 
 #[function_component(AboutBigFive)]
 pub fn about_big_five() -> Html {
@@ -8,7 +9,7 @@ pub fn about_big_five() -> Html {
 
 
     html! {
-
+        <>
         <div id="container" class="px-[10%] mt-10 text-dark text-2xl">
         
         <div class="px-4">
@@ -16,18 +17,16 @@ pub fn about_big_five() -> Html {
             <p>
                 {"Here we have minimal explanations of the scale. Arranged uniquely to the scale in question."}
             </p>
-        </div>
-        <div class="mt-10 px-4">
-            <SurveyNav />
-            <ul>
-                <li>
-                
-                </li>
-            </ul>
-        </div>
-    </div>
-    
+        <p>{"Short snippets and right left right photos"}</p>
 
+        </div>
+        </div>
+
+
+        <SurveyNav />
+        <BigFiveSections />
+    
+        </>
 
     }
 }

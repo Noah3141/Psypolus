@@ -21,6 +21,15 @@
         bg-light-700 cursor-pointer
         hover:bg-light-500;
     }
+    .nav-link {
+        @apply text-sm px-3 py-2 font-semibold text-dark-500
+        transition-all ease-linear duration-100 rounded-md
+        hover:bg-primary hover:text-light-500;
+    }
+    .link {
+        @apply cursor-pointer transition-all ease-linear duration-100
+        hover:text-primary origin-bottom;
+    }
 }
 /*  circle
 rounded-3xl 

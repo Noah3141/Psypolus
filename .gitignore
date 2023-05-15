@@ -6,3 +6,4 @@ app_backend/target
 app_frontend/target
 
 app_frontend/node_modules
+app_frontend/dist

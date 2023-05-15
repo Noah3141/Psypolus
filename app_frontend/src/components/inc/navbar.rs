@@ -25,14 +25,14 @@ pub fn navbar() -> Html {
         </svg>
       </button>
     </div>
-    <div class="hidden lg:flex lg:gap-x-12">
+    <div class="hidden lg:flex lg:gap-x-8">
 
-      <Link<Route> to={Route::Home } classes="text-sm font-semibold leading-6 text-slate-700">{"Home"}</Link<Route>>
-      <Link<Route> to={Route::Contact } classes="text-sm font-semibold leading-6 text-slate-700">{"Contact"}</Link<Route>>
-      <Link<Route> to={Route::About } classes="text-sm font-semibold leading-6 text-slate-700">{"About"}</Link<Route>>
+      <Link<Route> to={Route::Home } classes="nav-link">{"Home"}</Link<Route>>
+      <Link<Route> to={Route::Contact } classes="nav-link">{"Contact"}</Link<Route>>
+      <Link<Route> to={Route::About } classes="nav-link">{"About"}</Link<Route>>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm font-semibold leading-6 text-slate-700">{"Log in "}<span aria-hidden="true">{">"}</span></a>
+      <a href="#" class="">{"Log in "}<span aria-hidden="true">{">"}</span></a>
     </div>
   </nav>
   /*  Mobile menu, show/hide based on menu open state. */
