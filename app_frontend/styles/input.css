@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .button {
+        @apply py-1 px-3 cursor-pointer inline rounded-3xl justify-center bg-light-500
+        text-dark-400 hover:bg-success
+        transition-all ease-linear duration-100
+        hover:rounded-none;
+    }
+    .tooltip-right {
+        @apply absolute w-auto p-2 m-2 min-w-max 
+        left-14 rounded-md shadow-md 
+        text-light-500 bg-dark-400
+        text-xs font-bold
+        transition-all duration-100 scale-0 origin-left;
+    }
+    .tab-header {
+        @apply px-4 py-2 inline h-8 left-0 top-0
+        bg-light-700 cursor-pointer
+        hover:bg-light-500;
+    }
+}
+/*  circle
+rounded-3xl 
+*/

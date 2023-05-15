@@ -16,3 +16,4 @@ yew-router = "0.17"
 reqwasm = "0.5.0"
 serde = { version = "1.0.162", features = ["derive"] }
 chrono = { version = "0.4.24", features = ["serde", "wasmbind"] }
+gloo = "0.8.0"
