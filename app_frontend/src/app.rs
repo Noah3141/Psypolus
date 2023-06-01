@@ -4,7 +4,7 @@ use yew_router::prelude::*;
 use yew::prelude::*;
 
 
-use super::components::{
+use crate::components::{
     pages::{
         // Fundamentals
         home::*,

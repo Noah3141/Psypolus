@@ -5,8 +5,6 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies.app_shared]
-path = '../app_shared'
 
 [dependencies]
 rocket = { version = "0.5.0-rc.2", features = ["json"] }

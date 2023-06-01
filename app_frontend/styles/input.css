@@ -24,7 +24,7 @@
     .nav-link {
         @apply text-sm px-3 py-2 font-semibold text-dark-500
         transition-all ease-linear duration-100 rounded-md
-        hover:bg-primary hover:text-light-500;
+        hover:border hover:border-bottom-2;
     }
     .link {
         @apply cursor-pointer transition-all ease-linear duration-100
