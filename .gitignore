@@ -1,9 +1,8 @@
-app_shared/cargo.lock
 app_backend/cargo.lock
 app_frontend/cargo.lock
-app_shared/target
 app_backend/target
 app_frontend/target
 
 app_frontend/node_modules
 app_frontend/dist
+/target

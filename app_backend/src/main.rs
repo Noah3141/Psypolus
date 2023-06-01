@@ -19,7 +19,7 @@ use utils::{
 async fn main() -> Result<(), rocket::Error> {
 
     let _rocket = rocket::build()
-        .mount("/", routes![get_user])
+        .mount("/api/", routes![get_user])
         .launch()
         .await?;
 
