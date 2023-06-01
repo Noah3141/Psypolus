@@ -1,5 +1,10 @@
+pub mod models;
 pub mod routes;
 pub mod utils;
+
+use models::{
+    *
+};
 
 use routes::{
     get_user::*,
