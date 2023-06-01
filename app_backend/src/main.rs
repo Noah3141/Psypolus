@@ -1,4 +1,3 @@
-use app_shared::*;
 pub mod routes;
 pub mod utils;
 
