@@ -4,7 +4,6 @@ ENV ROCKET_PORT=8000
 ADD src /app
 WORKDIR /app
 
-RUN cargo build
 
 EXPOSE 8000
 CMD ["cargo", "run"]
