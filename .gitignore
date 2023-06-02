@@ -4,4 +4,11 @@ app_backend/target
 app_frontend/target
 
 app_frontend/node_modules
+
+
+
 .vscode/settings.json
+
+
+
+app_backend/src/bin/
