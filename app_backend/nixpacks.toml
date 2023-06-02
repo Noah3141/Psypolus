@@ -6,7 +6,12 @@ nixPkgs = ['...']
 # ...
 
 [phases.build]
-cmds = ["mkdir -p bin ", "cargo build --release --target x86_64-unknown-linux-musl", "cp target/x86_64-unknown-linux-musl/release/app_backend bin"]
+cmds = [
+    "mkdir -p bin ", 
+    "cargo build --release --target x86_64-unknown-linux-musl", 
+    "cp target/x86_64-unknown-linux-musl/release/app_backend bin",
+    "cp -R src/templates bin/templates"    
+]
 
 [start]
 cmd = "./bin/app_backend"
