@@ -13,9 +13,10 @@ RUN cargo install --path .
 
 
 FROM debian:buster-slim as runner
+# Copy this *file* from the builder linux microuniverse we labeled above, to the debian we're talking about now
 COPY --from=builder /usr/local/cargo/bin/app_backend /usr/local/bin/app_backend
 # Testing this new line:
-COPY templates /usr/local/bin/app_backend
+COPY templates /usr/local/bin/
 ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8000
 CMD ["app_backend"]
